@@ -1,0 +1,1 @@
+[{"name":"Jenkins","type":"jenkins","url":"http://localhost:9090/","buildOrder":7,"buildName":"ORANGE-HRM  TEST EXECUTION RESULT #7","buildUrl":"http://localhost:9090/job/SampleOrangeHRM/7/","reportName":"AllureReport","reportUrl":"http://localhost:9090/job/SampleOrangeHRM/7/allure"}]

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="2" time="52.363" timestamp="2023-05-24T15:29:50.928580" hostname="LAPTOP-BKEQF5PU"><testcase classname="operations.test_login" name="test_valid_Login" time="26.945" /><testcase classname="operations.test_login" name="test_invalid_Login" time="24.926"><failure message="assert 'dashboard' in 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'&#10; +  where 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login' = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session=&quot;07bf1a69f1132a7dec639f0ec01917af&quot;)&gt;.current_url">test_setup = None
+
+    @allure.description("Validate OrangeHRM with incorrect credentials")
+    @allure.severity(severity_level="NORMAL")
+    def test_invalid_Login(test_setup):
+        driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
+        driver.implicitly_wait(10)
+        time.sleep(5)
+        driver.find_element("xpath", "//input[@name='username']").clear()
+        enter_username("Admin")
+        driver.find_element("xpath", "//input[@name='password']").clear()
+        enter_password("admin123123")
+        time.sleep(3)
+        driver.find_element("xpath", "//button[normalize-space()='Login']").click()
+        time.sleep(3)
+    
+        try:
+&gt;           assert "dashboard" in driver.current_url
+E           assert 'dashboard' in 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'
+E            +  where 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login' = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="07bf1a69f1132a7dec639f0ec01917af")&gt;.current_url
+
+operations\test_login.py:50: AssertionError</failure></testcase></testsuite></testsuites>
