@@ -25,7 +25,7 @@ class Oneline:
         return [element.text for element in elements if element.text.endswith("s")]
 
 
-    # if element.text.endswith("s")
+    # if element.text.endswith("s")------
 
 
 oneline = Oneline()
