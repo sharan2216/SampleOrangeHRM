@@ -1,3 +1,5 @@
-.gitignore.swo
-.gitignore.swp
-.idea/
+*.log
+*.swp
+*.swo
+*.idea/
+*.cache
