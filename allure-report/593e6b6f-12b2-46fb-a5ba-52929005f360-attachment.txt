@@ -1,0 +1,3 @@
+setup class gets called
+setup method gets called
+method1 gets called
