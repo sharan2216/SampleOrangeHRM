@@ -2,7 +2,6 @@
 pipeline {
     agent any
 <<<<<<< HEAD
-
 =======
 >>>>>>> 0536451879cbbeac712669e7452d5fd5bb99691a
     stages {    
