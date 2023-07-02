@@ -14,3 +14,4 @@ class Test1:
 
 obj = Test1
 obj.getval(self)
+#updated
