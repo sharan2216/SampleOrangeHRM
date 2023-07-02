@@ -1,9 +1,7 @@
 
 pipeline {
     agent any
-<<<<<<< HEAD
-=======
->>>>>>> 0536451879cbbeac712669e7452d5fd5bb99691a
+
     stages {    
         stage('Build') {
             steps 
@@ -11,22 +9,12 @@ pipeline {
                 echo 'Build App'
             }
         }
-<<<<<<< HEAD
-=======
-    }
-    stages {
->>>>>>> 0536451879cbbeac712669e7452d5fd5bb99691a
         stage('Test') {
             steps
             {
                 echo 'Test App'
             }
         }
-<<<<<<< HEAD
-=======
-    }
-    stages {
->>>>>>> 0536451879cbbeac712669e7452d5fd5bb99691a
         stage('Deploy ') {
             steps {
                 echo 'Deploy App'
