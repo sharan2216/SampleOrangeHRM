@@ -6,7 +6,7 @@ from allure_commons.types import AttachmentType
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-
+#new line added------
 @pytest.mark.usefixtures("setup_and_teardown","log_on_failure")
 class TestLogin:
     @allure.severity(allure.severity_level.CRITICAL)
