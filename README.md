@@ -1,2 +1,0 @@
-# SampleOrangeHRM
-Hello World
